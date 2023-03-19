@@ -746,6 +746,7 @@ input[type=text], input[type=email], textarea{
     /* height: inherit; */
     gap:80px;
     padding: 20px 0;
+    margin-left: 15px;
 }
 
 .contacticons{
@@ -1235,14 +1236,6 @@ input[type=text], input[type=email], textarea{
     justify-content: space-between;
     align-items: center;
 }
-.contactform{
-    /* width: 453px;
-    height: 669px;
-    background: #FFFFFF;
-    border: 1px solid #DDDDDD;
-    box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
-    border-radius: 20px; */
-}
 .contactform h6{
     font-family: 'Jost';
     font-style: normal;
@@ -1426,7 +1419,7 @@ input[type=text], input[type=email], textarea{
 .about-section .aboutdetail{
     font-weight: 400;
     font-size: 14px;
-    line-height: 26px;
+    line-height: 22px;
     letter-spacing: 0.2px;
 }
 .aboutimg{
@@ -1453,11 +1446,7 @@ input[type=text], input[type=email], textarea{
     font-size: 16px;
 }
 .offerblocks{
-    /* display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center; */
+
     gap: 5px;
 }
 .offerblock1, .offerblock2, .offerblock3, .offerblock4{
@@ -1639,6 +1628,7 @@ margin-bottom: 10px;
 .location{
     width: 100%;
     align-items: center;
+    margin-left: 0;
 }
 .contactform{
     display: flex;
@@ -1672,6 +1662,9 @@ margin-bottom: 10px;
         display: block;
         align-items: center;
         gap: 0;
+    }
+    .about-section h2 {
+        text-align: center;
     }
 .aboutbtn{
     display: block;
@@ -1721,7 +1714,57 @@ margin-bottom: 10px;
 .offerblock1, .offerblock2, .offerblock3, .offerblock4{
     width: 216px;
     height: 216px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
+    /* border: 18px solid #EB7B37; */
+    border: none;
+}
+.offerblock1{
+    position: relative;
+}
+.offerblock1::before{
+    position: absolute;
+    content: "";
+    width: 50%;
+    height: 16px;
+    background: #EB7B37;
+    left: 0;
+    top: -16px;
+}
+.offerblock2{
+    position: relative;
+}
+.offerblock2::before{
+    position: absolute;
+    content: "";
+    width: 50%;
+    height: 16px;
+    background: #FAD606;
+    left: 0;
+    top: -16px;
+}
+.offerblock3{
+    position: relative;
+}
+.offerblock3::before{
+    position: absolute;
+    content: "";
+    width: 50%;
+    height: 16px;
+    background: #C6A136;
+    left: 0;
+    top: -16px;
+}
+.offerblock4{
+    position: relative;
+}
+.offerblock4::before{
+    position: absolute;
+    content: "";
+    width: 50%;
+    height: 16px;
+    background: #A2B8C1;
+    left: 0;
+    top: -16px;
 }
 .offerblockimg1 img, .offerblockimg2 img, .offerblockimg3 img, .offerblockimg4 img{
     width: 100%;
@@ -1972,14 +2015,42 @@ margin-bottom: 10px;
     .offerblock1, .offerblock2, .offerblock3, .offerblock4 {
         width: 200px;
         height: 200px;
-        margin-bottom: 20px;
+        margin-bottom: 40px;
     }
+
     .footer-section {
         font-size: 12px;
     }
     header {
         padding: 20px 10px;
         margin-bottom: 80px;
+    }
+
+    .cicon1 {
+        flex-grow: 3;
+        display: flex;
+        gap: 20px;
+        width: 100%;
+        align-items: center;
+        text-align: start;
+        margin-left: 25px;
+    }    
+    .cicon2, .cicon3 {
+        flex-grow: 2;
+        margin-top: 30px;
+    }
+    .cicon1 img, .cicon3 img{
+        width: 100%;
+        max-width: 22px;
+        height: auto;
+    }
+    .cicon2 img{
+        width: 100%;
+        max-width: 18px;
+        height: auto;
+    }
+    .cicon1 p{
+        text-align: start;
     }
 }
 
@@ -2013,11 +2084,6 @@ margin-bottom: 10px;
         margin-bottom: 50px;
         padding: 10px 48px;
     }
-    /* .about-section .aboutdetail {
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 17px;
-    } */
     .aboutbtn button {
         padding: 10px 48px;
     }
@@ -2034,12 +2100,63 @@ margin-bottom: 10px;
         padding: 0 10px;
     }
     .partnerpara {
+        font-weight: 400;
+        font-size: 16px;
         line-height: 20px;
+        letter-spacing: 0.2px;
     }
     .offerblock1, .offerblock2, .offerblock3, .offerblock4 {
         width: 155px;
         height: 155px;
-        margin-bottom: 20px;
+        margin-bottom: 40px;
+    }
+    .offerblock1{
+        position: relative;
+    }
+    .offerblock1::before{
+        position: absolute;
+        content: "";
+        width: 50%;
+        height: 12px;
+        background: #EB7B37;
+        left: 0;
+        top: -16px;
+    }
+    .offerblock2{
+        position: relative;
+    }
+    .offerblock2::before{
+        position: absolute;
+        content: "";
+        width: 50%;
+        height: 12px;
+        background: #FAD606;
+        left: 0;
+        top: -16px;
+    }
+    .offerblock3{
+        position: relative;
+    }
+    .offerblock3::before{
+        position: absolute;
+        content: "";
+        width: 50%;
+        height: 12px;
+        background: #C6A136;
+        left: 0;
+        top: -16px;
+    }
+    .offerblock4{
+        position: relative;
+    }
+    .offerblock4::before{
+        position: absolute;
+        content: "";
+        width: 50%;
+        height: 12px;
+        background: #A2B8C1;
+        left: 0;
+        top: -16px;
     }
     .testcarddesc {
         font-size: 16px;
@@ -2049,7 +2166,7 @@ margin-bottom: 10px;
         padding: 0 30px;
     }
     .testimonialstars img{
-width: 25px;
+    width: 25px;
     }
 .quote1 img, .quote2 img, .quote3 img{
     width: 25px;
